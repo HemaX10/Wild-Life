@@ -1,0 +1,767 @@
+/* for all items of the website */
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 10px;
+}
+
+body{
+    color: white;
+    font-family: 'Playfair Display SC', serif;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Playfair Display SC', serif;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+/* Header  */
+
+header{
+    height:80px;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 10rem;
+}
+
+header h1{
+    font-size: 2.5rem;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+header button{
+    background-color: black;
+    color: white;
+    font-size: 2.5rem;
+    border: 0;
+}
+
+/* .header_content of the top page */
+
+.header_content{
+    height: calc(100vh - 80px);
+    background-color: black;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(images/1_top_image.jpg);
+}
+
+.header_content div{
+    text-align: center;
+    flex-direction: column;
+    padding: 13vh 0 0;
+    font-size: 1.7rem;
+}
+
+.header_content div h1{
+    font-size: 6rem;
+}
+
+.header_content div p {
+    margin-top: 2rem;
+}
+.header_content div button{
+    padding: 1rem 4rem;
+    border-radius: 25px;
+    font-size: 2rem;
+    margin-top: 4rem;
+    border: 0;
+    cursor: pointer;
+}
+
+.photographer_name{
+    float: right;
+    padding: 10vh 4rem 0rem 0;
+    font-size: 1.2rem;
+}
+
+
+@media (max-width: 950px){
+    .header_content div{
+        padding: 20vh 0 0;
+        font-size: 2rem;
+    }
+    .header_content div h1{
+        font-size: 5rem;
+    }
+
+    .header_content div button{
+        font-size: 1.7rem;
+        padding: 1rem 2rem;
+    }
+}
+
+@media  (max-width: 850px){
+    header{
+        padding: 2rem 5rem;
+    }
+    .header_content div{
+        padding: 10vh 0 0;
+        font-size: 1.4rem;
+    }
+
+    .header_content div h1{
+        font-size: 3rem;
+    }
+    
+    .header_content div p{
+        font-size: 1.4rem;
+        line-height: 1.6rem;
+    }
+
+    .header_content div button{
+        font-size: 1.2rem;
+    }
+    .photographer_name{
+        padding: 12vh 2rem 0 0;
+    }
+}
+
+
+@media (max-width: 575px){
+    .header_content div h1{
+        font-size: 2.5rem;
+        padding-bottom: 2rem;
+        line-height: 4rem;
+    }
+
+    .header_content div{
+        font-size: 1rem;
+    }
+
+    .header_content div button{
+        font-size: 1.5rem;
+    }
+
+    .photographer_name{
+        font-size: .8rem;
+        padding: 15vh 0 0;
+    }
+}
+
+@media (max-width: 450px){
+    .header_content div{
+        font-size: 1rem;
+        line-height: 3rem;
+    }
+}
+
+@media (max-width: 375px){
+    .photographer_name{
+        font-size: .7rem;
+        padding: 10vh 0 0;
+    }
+}
+@media(max-width: 280px ){
+    header h1{
+        font-size: 1.5rem;
+    }
+
+    header {
+        padding: 1rem 3rem ;
+    }
+
+    .header_content div {
+        line-height: 2rem;
+    }
+
+    .header_content div button{
+        font-size: 1.2rem;
+        margin-top: 4rem;
+    }
+}
+
+@media (min-width : 2000px){
+    header h1{
+        font-size: 4rem;
+    }
+
+    .header_content div h1{
+        font-size: 12rem;
+    }
+
+    .header_content div p {
+        margin-top: 5rem;
+    }
+    .header_content div button{
+        padding: 2rem 6rem;
+        font-size: 3rem;
+    }
+    
+    .photographer_name{
+        font-size: 3rem;
+    }
+}
+
+
+/* 
+animals sectionnnnnnnnnnn */
+
+.animals_section{
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 4vh 0;
+}
+
+.animals_section h1{
+    font-size: 4rem;
+}
+
+.animals_section p{
+    font-size: 1.7rem;
+    line-height: 2rem;
+    margin-top: 2rem;
+}
+
+.animals_flex{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10rem;
+    /* flex-wrap: wrap; trying some features  */
+    padding-top: 10vh;
+    gap: 4rem;
+}
+
+.fishs{
+    background-image: url(images/2\ first\ image\ for\ the\ second\ section.jpg);
+}
+
+.monkey{
+    background-image: url(images/2\ second\ image\ for\ the\ second\ section.jpg);
+}
+
+.tamasy7{
+    background-image: url(images/2\ third\ image\ for\ the\ second\ section.jpg);
+}
+
+.animal{
+    flex: 2;
+    padding: 0 3rem;
+    /* width: 28%; */
+    background-size: cover;
+}
+
+.animal p{
+    position: relative;
+    font-size: 2rem;
+    text-align: left;
+    padding-top: 30vh;
+    padding-bottom: 2rem;
+}
+
+@media (min-width: 1000px){
+    .animals_section{
+        height: 100vh;
+    }
+}
+
+@media (max-width: 776px){
+    .animals_flex{
+        flex-direction: column;
+    }
+
+    .animal p {
+        text-align: center;
+        padding-top: 15vh;
+    }
+}
+
+@media (max-width : 420px){
+    .animals_flex{
+        padding: 0 5rem;
+    }
+
+    .animals_section h1{
+        font-size: 2rem;
+    }
+
+    .animals_section p{
+        font-size: 1rem;
+        line-height: 1.2rem;
+    }
+}
+
+/* elephantes section */
+
+.elephants{
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-image: url(images/3\ the\ image\ for\ the\ third\ section.jpg);
+}
+
+.elephants div{
+    text-align: center;
+    padding-top: 40vh;
+}
+
+.elephants div h1{
+    font-size: 6rem;
+}
+
+.elephants div p{
+    font-size: 1.5rem;
+    line-height: 1.7;
+}
+
+@media (min-width: 1440px ){
+    .elephants div h1{
+        font-size: 10rem;
+    }
+    
+    .elephants div p{
+        font-size: 2rem;
+        line-height: 2.2rem;
+    }
+}
+
+@media (max-width: 1000px){
+    .elephants div{
+        padding-top: 40vh;
+    }
+
+    .elephants div h1{
+        font-size: 3.4rem;
+    }
+    
+    .elephants div p{
+        font-size: 1.6rem;
+        line-height: 1.7rem;
+    }
+}
+@media (max-width: 800px){
+    .elephants div h1{
+        font-size: 4.5rem;
+    }
+    
+    .elephants div p{
+        font-size: 1.3rem;
+        line-height: 1.5rem;
+    }
+
+    .elephants div{
+        text-align: center;
+        padding-top: 40vh;
+    }
+}
+
+@media(max-width: 550px){
+    .elephants div{
+        text-align: center;
+        padding-top: 35vh;
+    }
+}
+@media (max-width: 425px){
+    .elephants div{
+        padding-top: 40vh;
+    }
+
+    .elephants div h1{
+        font-size: 3rem;
+    }
+    
+    .elephants div p{
+        font-size: 1rem;
+        line-height: 1.1rem;
+    }
+
+}
+
+/* text in the page i don't care about it  */
+
+.easy_content{
+    background-color: black;
+    height: 100vh;
+}
+
+.easy_content div{
+    padding-top: 20vh;
+    text-align: center;
+}
+
+.easy_content div h1{
+    font-weight: 700;
+    font-size: 6rem;
+}
+
+.easy_content p{
+    font-size: 2rem;
+    line-height: 2.2rem;
+    margin-top: 8vh;
+    padding: 0 2rem;
+}
+
+@media (min-width: 1750px){
+    .easy_content div h1{
+        font-size: 8rem;
+    }
+
+    .easy_content p{
+        font-size: 3.5rem;
+        line-height: 3.6rem;
+        margin-top: 10vh;
+    }
+}
+
+@media (max-width: 1440px){
+    .easy_content div{
+        padding-top: 30vh;
+    }
+    
+    .easy_content div h1{
+        font-size: 5rem;
+    }
+
+    .easy_content p{
+        font-size: 2rem;
+        margin-top: 6vh;
+    }
+}
+
+@media (max-width: 1200px){
+    .easy_content div h1{
+        font-size: 5rem;
+    }
+
+    .easy_content p{
+        font-size: 1.8rem;
+        line-height: 2;
+    }
+}
+
+@media (max-width: 1100px){
+    .easy_content div{
+        padding-top: 20vh;
+    }
+
+    .easy_content div h1{
+        font-size: 4.5rem;
+    }
+
+    .easy_content p{
+        font-size: 1.5rem;
+        line-height: 1.7rem;
+    }
+}
+
+@media (max-width: 1000px){
+    .easy_content div h1{
+        font-size: 4rem;
+    }
+
+    .easy_content p{
+        font-size: 1.1rem;
+        line-height: 1.5rem;
+    }
+}
+
+@media (max-width: 770px){
+    .easy_content div h1{
+        font-size: 3rem;
+    }
+
+    .easy_content p{
+        font-size: 1rem;
+        line-height: 1.2rem;
+    }
+}
+
+@media (max-width: 400px){
+    .easy_content div{
+        padding-top: 15vh;
+    }
+
+    .easy_content div h1{
+        font-size: 2rem;
+    }
+
+    .easy_content div p{
+        font-size: 1rem;
+        line-height: 1.3rem;
+    }
+}
+
+/* horsessssssssss */
+
+.horser_img{
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-image: url(images/4\ first\ image\ for\ the\ forth\ section.jpg);
+}
+
+/* two animals  */
+
+.two_animals{
+    height: 100vh;
+    padding: 10vh;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    gap: 4rem;
+}
+
+.fishs{
+    background-image: url(images/4\ second\ image\ for\ the\ forth\ section.jpg);
+}
+
+.IDK_FISH{
+    background-image: url(images/4\ third\ image\ for\ the\ forth\ section.jpg);
+}
+
+.sea_animal{
+    height: 80vh;
+    width: 50%;
+    background-size: cover;
+}
+
+@media (max-width: 1000px){
+    .two_animals{
+        flex-direction: column;
+        padding: 5vh;
+        gap: 3rem;
+    }
+
+    .sea_animal{
+        width: 100%;
+        height: 100%;
+    }
+}
+
+
+/* final section animals  */
+.top_animals{
+    background-color: black;
+    text-align: center;
+    height: 100vh;
+    padding: 5vh 0 5vh;
+}
+
+.Header_top_animasls{
+    padding: 2vh 0 5vh;
+}
+
+.Header_top_animasls h1{
+    font-size: 3.5rem;
+    padding-bottom: 2rem;
+}
+
+.Header_top_animasls p{
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+}
+
+.images_top_animals{
+    padding: 5vh;
+    display: grid;
+    gap: 2rem;
+    grid-template-areas: 'first second third forth';
+}
+
+.top_animal{
+    background-size: cover;
+    height: 60vh;
+    width: 100%;
+}
+.bees{
+    grid-area: first;
+    background-image: url(images/5\ first\ image\ of\ the\ fifth\ section.jpg);
+}
+
+.elephant{
+    grid-area: second;
+    background-image: url(images/5\ second\ image\ for\ the\ fifth\ section.jpg);
+}
+
+.another_monkey{
+    grid-area: third;
+    background-image: url(images/5\ third\ image\ for\ the\ fifth\ section.jpg);
+}
+
+.nesr{
+    grid-area: forth;
+    background-image: url(images/5\ forth\ image\ for\ the\ fifth\ section.jpg);
+}
+
+
+
+@media (min-width: 2150px){
+    .Header_top_animasls h1{
+        font-size: 8rem;
+        padding-bottom: 4rem;
+    }
+    
+    .Header_top_animasls p{
+        font-size: 2.5rem;
+        line-height: 2.8rem;
+    }
+}
+
+@media (max-width: 2149px){
+    .Header_top_animasls h1{
+        font-size: 6rem;
+        padding-bottom: 4rem;
+    }
+    
+    .Header_top_animasls p{
+        font-size: 2.2rem;
+        line-height: 2.4rem;
+    }
+}
+
+@media (max-width: 1700px){
+    .Header_top_animasls h1{
+        font-size: 5rem;
+        padding-bottom: 4rem;
+    }
+    
+    .Header_top_animasls p{
+        font-size: 2rem;
+        line-height: 2.2rem;
+    }
+}
+
+@media (max-width: 1500px){
+    .Header_top_animasls h1{
+        font-size: 3rem;
+        padding-bottom: 4rem;
+    }
+    
+    .Header_top_animasls p{
+        font-size: 1.2rem;
+        line-height: 1.4rem;
+    }
+
+    
+.top_animal{
+    height: 55vh;
+}
+}
+
+
+@media (max-width: 1023px){
+    .top_animals{
+        height: 100%;
+    }
+    .images_top_animals{
+        grid-template-areas: 'first second'
+                            'third forth';
+    }
+}
+
+@media (max-width: 650px){
+    .Header_top_animasls h1{
+        font-size: 2.5rem;
+        padding-bottom: 3rem;
+    }
+
+    .Header_top_animasls p{
+        font-size: 1rem;
+        line-height: 1.2rem;
+    }
+    .images_top_animals{
+        grid-template-areas: 'first '
+                            'second'
+                            'third'
+                            ' forth';
+    }
+}
+
+
+/* fooooooooooooooooooooooooter */
+footer{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 100vh;
+    padding-top: 10vh;
+    background-color: black;
+    overflow: hidden;
+}
+
+.my_links{
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10vh 10%;
+    font-size: 1.2rem;
+    flex-wrap: wrap;
+}
+
+footer h1{
+    text-align: center;
+    font-size: 5rem;
+    padding-bottom: 10vh;
+}
+.my_links a{
+    padding: 1rem 5rem;
+    border: 2px solid white;
+    border-radius: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+
+.copy_right{
+    background-color: gray;
+    font-size: 3rem;
+    height: 20vh;
+    text-align: center;
+}
+
+@media (min-width: 1800px){
+    footer h1{
+        font-size: 7rem !important;
+    }
+
+    .my_links{
+        font-size: 4rem !important;
+        padding: 2vh 10%;
+    }
+}
+@media (min-width: 1100px){
+    footer h1{
+        font-size: 4rem;
+    }
+
+    .my_links{
+        font-size: 2rem;
+        padding: 2vh 10%;
+    }
+}
+
+/* @media (max-width: 1000px){
+    .my_links{
+        flex-direction: column;
+    }
+
+    footer h1{
+        font-size: 2rem;
+        padding-bottom: 10vh;
+    }
+} */
+
+@media (max-width: 500px){
+    .my_links{
+        flex-direction: column;
+    }
+
+    footer h1{
+        font-size: 2rem;
+        padding-bottom: 10vh;
+    }
+}
